@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def primos():
+def nao_entre_em_panico():
     primos = [2]
     print(2, end=' ')
     i = 3
@@ -18,8 +18,7 @@ def primos():
             primos.append(i)
             print(i,  end=' ')
         i += 1
-    print('<---- 100˚ Número Primo!')
-    return primos
+    return str(primos).strip('[]')
 
 
 if __name__ == "__main__":
