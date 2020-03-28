@@ -1,1 +1,1 @@
-web: n_primos.py
+web: python n_primos.py
